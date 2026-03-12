@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Bus Animation</title>
+
+    <style>
+
+        section{
+            width:1000px;
+            height:600px;
+
+        }
+        div{
+            width:300px;
+            height:100px;
+            background-color:red;
+            border-radius:5px;
+
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes move {
+            0%{
+                margin-left:0;
+                margin-top:0;
+                rotate: 180deg;
+
+            }
+            25%{
+                margin-left:900px;
+                margin-top:0;
+                rotate: -180deg;
+
+            }
+            50%{
+                margin-left:900px;
+                margin-top:500px;
+                rotate: 180deg;
+
+            }
+            75%{
+                margin-left:0;
+                margin-top:500px;
+                rotate: -180deg;
+
+
+            }
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<section>
+    <div ></div>
+
+</section>
+
+</body>
+</html>
