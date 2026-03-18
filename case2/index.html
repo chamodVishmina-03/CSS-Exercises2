@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Progress</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, #2d3fd7, #0ea5e9);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+
+
+            background: conic-gradient(
+                    red 0deg 120deg,
+                    #eee 120deg 360deg
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: 0.5s;
+        }
+
+
+        .inner {
+            width: 160px;
+            height: 160px;
+            background: gray;
+            border-radius: 50%;
+
+            display: flex;
+            position: fixed;
+
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+
+        .circle:hover {
+
+            rotate: 1000000deg;
+            animation-duration: 100000000ms;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+<div class="container">
+    <div class="circle">
+        <div class="inner">
+            <span>RWAD</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
