@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+section:nth-child(1)>div{
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transition: 0.9s;
+    border: 2px solid purple;
+    animation-name: myAnimation;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin: auto;
+}
+
+
+@keyframes myAnimation {
+    from{
+        width: 10px;
+        aspect-ratio: 1/1;
+        opacity: 1;
+
+    }
+    to{
+        width: 150px;
+        aspect-ratio: 1/1;
+        opacity: 0;
+    }
+}
+
+
+/*section:nth-child(2)> div{*/
+/*    width: 1px;*/
+/*    aspect-ratio: 1/1;*/
+/*    border: 2px solid cyan;*/
+/*    opacity: 1;*/
+/*}*/
+
+/*section:nth-child(2)> div:active{*/
+/*    width: 10px;*/
+/*    border-radius: 50%;*/
+/*    transition: 0.9s;*/
+/*    border: 2px solid #06eff6;*/
+/*    animation-name: myAnimation;*/
+/*    animation-duration: 1000ms;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-timing-function: ease-in-out;*/
+/*    opacity: 0;*/
+/*}*/
